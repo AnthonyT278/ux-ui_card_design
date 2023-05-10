@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(124, 55, 55);
+}
+
+.card
+{
+    /*box-shadow: 0 0 7 rgba(0, 0, 0, 0.2);*/
+    width: 85%;
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(210, 156, 156);
+    color: black;
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;  
+}
+
+.container {
+    font-size:8px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.design {
+     font-family: 'Lobster', cursive;
+     font-weight: bold;
+}
+
+.design-info
+{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 9px;
+    width: 160px; 
+    margin: 0 auto; 
+} 
+
+.social-item
+{
+   margin: auto;
+   justify-content: space-between;
+   color: aqua;
+}
+
+.social-item:hover 
+{
+    transform: scale(1.2);
+    /*background: rgba(88, 7, 54, 0.628);*/
+}
+
+ 
+@media only screen and (max-width: 768px) {
+    .card {
+        max-width: 115%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+      max-width: 100%;
+    }
+    
+}
